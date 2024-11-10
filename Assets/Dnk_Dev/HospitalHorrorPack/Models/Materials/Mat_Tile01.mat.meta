@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: c062415a802b2f846916a90dadc80f5a
-timeCreated: 1481021104
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 80117
-  packageName: PBR - Hospital Horror Pack. Free
-  packageVersion: 1.1
-  assetPath: Assets/Dnk_Dev/HospitalHorrorPack/Models/Materials/Mat_Tile01.mat
-  uploadId: 165932
+version https://git-lfs.github.com/spec/v1
+oid sha256:faa5eb1e0fdd45c2ea40a6e5a12f434baea610df80a15d64ae8b65149a9ca411
+size 419

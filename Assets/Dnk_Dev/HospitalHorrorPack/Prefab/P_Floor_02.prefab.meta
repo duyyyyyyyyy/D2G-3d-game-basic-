@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: 695e9c39c231cfa41a135e68073a9772
-timeCreated: 1483622374
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 80117
-  packageName: PBR - Hospital Horror Pack. Free
-  packageVersion: 1.1
-  assetPath: Assets/Dnk_Dev/HospitalHorrorPack/Prefab/P_Floor_02.prefab
-  uploadId: 165932
+version https://git-lfs.github.com/spec/v1
+oid sha256:449b50b498ab16d55d7a2573370cef824f521e4fa23072fc80cd118ad24fbd10
+size 412
