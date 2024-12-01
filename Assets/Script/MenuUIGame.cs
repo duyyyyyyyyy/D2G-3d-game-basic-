@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MenuUIGame : MonoBehaviour
 {
-    public GameObject optioninner;
+    public static GameObject optioninner;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
