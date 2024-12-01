@@ -7,11 +7,6 @@ public class ShakePlayer : MonoBehaviour
 
     void Update()
     {
-        if (cameraAnim == null)
-        {
-            Debug.LogError("Animator not assigned to cameraAnim.");
-            return;
-        }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
             walking = true;
