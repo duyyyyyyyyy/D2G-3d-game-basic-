@@ -40,7 +40,7 @@ public class GetItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Brain"))
         {
-            intText.SetActive(true);
+            intText.SetActive(false);
             currentItem = null;
         }
         if (other.gameObject.CompareTag("Flashlight"))
