@@ -42,6 +42,10 @@ public class Core : MonoBehaviour
             }
         }
     }
+    public void coree()
+    {
+        core.text = ".";
+    } 
     [Serializable]
     public class Doituong
     {

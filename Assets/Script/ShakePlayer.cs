@@ -17,16 +17,16 @@ public class ShakePlayer : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
-                    cameraAnim.ResetTrigger("walk");
-                    cameraAnim.ResetTrigger("idle");
+                    //cameraAnim.ResetTrigger("walk");
+                    //cameraAnim.ResetTrigger("idle");
                     cameraAnim.SetTrigger("sprint");
                 }
             }
         }
         else
         {
-            cameraAnim.ResetTrigger("walk");
-            cameraAnim.ResetTrigger("sprint");
+            //cameraAnim.ResetTrigger("walk");  
+            //cameraAnim.ResetTrigger("sprint");
             cameraAnim.SetTrigger("idle");
             walking = false;
         }

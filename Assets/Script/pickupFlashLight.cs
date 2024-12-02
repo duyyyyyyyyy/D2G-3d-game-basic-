@@ -3,12 +3,18 @@ using UnityEngine;
 public class pickupFlashLight : MonoBehaviour
 {
     public GameObject inttext, flashlight_table, flashlight_hand;
+    private GameObject flash;
     public AudioSource pickup;
     public bool interactable;
+    private GameObject check;
+     void Start()
+    {
+        interactable = false;
+    }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.gameObject.CompareTag("MainCamera"))
         {
             inttext.SetActive(true);
             interactable = true;
@@ -16,7 +22,7 @@ public class pickupFlashLight : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.gameObject.CompareTag("MainCamera"))
         {
             inttext.SetActive(false);
             interactable = false;
@@ -35,5 +41,10 @@ public class pickupFlashLight : MonoBehaviour
                 flashlight_table.SetActive(false);
             }
         }
+        if(check == true)
+        {
+            gameObject.GetComponent<Core>().coree();
+        }
+        Debug.Log(check);
     }
 }
