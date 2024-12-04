@@ -2022,7 +2022,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 565991553498514846, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
       propertyPath: radius
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 565991553498514846, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
       propertyPath: target
@@ -2102,10 +2102,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016822400602455012, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
       propertyPath: m_Speed
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6016822400602455012, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6016822400602455012, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
+      propertyPath: m_StoppingDistance
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6535466644442616992, guid: 7e2c15302b57ec148ab214380fa337cc, type: 3}
@@ -8678,6 +8682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpscare: {fileID: 1981864068}
+  live: 2
 --- !u!65 &1752938149
 BoxCollider:
   m_ObjectHideFlags: 0
