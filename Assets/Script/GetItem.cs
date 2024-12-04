@@ -10,7 +10,9 @@ public class GetItem : MonoBehaviour
     private GameObject flash;
     public TextMeshProUGUI itemcount;
     public int _itemCount;
-    public int _itemCount2;
+    public AudioClip brain;
+    public AudioClip flashlight;
+    public AudioSource AudioSource;
 
     void Start()
     {
@@ -55,6 +57,7 @@ public class GetItem : MonoBehaviour
     {
         if (currentItem != null && Input.GetKeyDown(KeyCode.E))
         {
+            AudioSource.PlayOneShot(brain);
             Destroy(currentItem);
             _itemCount++;
             itemcount.text = $"X{_itemCount}";
@@ -64,6 +67,7 @@ public class GetItem : MonoBehaviour
         }
         if(flash != null && Input.GetKeyDown(KeyCode.E))
         {
+            AudioSource.PlayOneShot(flashlight);
             Destroy(flash);
             intText.SetActive(false);
             flash = null;

@@ -141,6 +141,8 @@ public class EnemyAI1 : MonoBehaviour
 
     private bool isChasing = false; // Trạng thái có đang đuổi theo player không
     public int braincount;
+    public AudioSource enemyaudio;
+    public AudioClip phathien;
 
     void Start()
     {
@@ -160,15 +162,27 @@ public class EnemyAI1 : MonoBehaviour
             // Nếu player trong phạm vi, đuổi theo player
             isChasing = true;
             navMeshAgent.SetDestination(target.position);
+            enemyaudio.PlayOneShot(phathien);
         }
         else
         {
             // Nếu player ngoài phạm vi, quay lại tuần tra
             isChasing = false;
+            stop();
         }
 
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            stop();
+        }
+    }
+    public void stop()
+    {
+        enemyaudio.Stop();
+    }
     // Tuần tra ngẫu nhiên trong phạm vi bán kính
     IEnumerator Patrol()
     {

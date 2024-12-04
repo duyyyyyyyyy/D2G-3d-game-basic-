@@ -5,6 +5,8 @@ public class FlashLight : MonoBehaviour
     public GameObject light;
     public bool toggle;
     public AudioSource toggleSound;
+    public AudioClip flashlighton;
+    public AudioClip flashlightoff;
 
     void Start()
     {
@@ -27,10 +29,13 @@ public class FlashLight : MonoBehaviour
             if (toggle == false)
             {
                 light.SetActive(false);
+                toggleSound.PlayOneShot(flashlightoff);
             }
             if (toggle == true)
             {
                 light.SetActive(true);
+                toggleSound.PlayOneShot(flashlighton);
+
             }
         }
 
