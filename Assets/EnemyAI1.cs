@@ -140,6 +140,7 @@ public class EnemyAI1 : MonoBehaviour
     private float patrolInterval = 3f; // Thời gian giữa các lần tuần tra
 
     private bool isChasing = false; // Trạng thái có đang đuổi theo player không
+    public int braincount;
 
     void Start()
     {
@@ -149,6 +150,8 @@ public class EnemyAI1 : MonoBehaviour
 
     void Update()
     {
+
+        Debug.Log(braincount);
         // Tính khoảng cách từ enemy đến player
         var distance = Vector3.Distance(target.position, transform.position);
 
@@ -163,6 +166,7 @@ public class EnemyAI1 : MonoBehaviour
             // Nếu player ngoài phạm vi, quay lại tuần tra
             isChasing = false;
         }
+
     }
 
     // Tuần tra ngẫu nhiên trong phạm vi bán kính
@@ -184,10 +188,10 @@ public class EnemyAI1 : MonoBehaviour
     {
         Vector3 randomDirection = Random.insideUnitSphere * distance;
         randomDirection += origin;
-
         NavMeshHit navHit;
         NavMesh.SamplePosition(randomDirection, out navHit, distance, layermask);
-
         return navHit.position;
+        
     }
+
 }

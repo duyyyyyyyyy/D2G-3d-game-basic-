@@ -9,7 +9,8 @@ public class GetItem : MonoBehaviour
     public GameObject intText;
     private GameObject flash;
     public TextMeshProUGUI itemcount;
-    private int _itemCount;
+    public int _itemCount;
+    public int _itemCount2;
 
     void Start()
     {

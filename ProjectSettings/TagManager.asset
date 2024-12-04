@@ -9,6 +9,7 @@ TagManager:
   - Flashlight
   - Tv
   - Brain
+  - Enemy
   layers:
   - Default
   - TransparentFX
