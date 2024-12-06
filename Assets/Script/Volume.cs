@@ -6,6 +6,7 @@ public class Volume : MonoBehaviour
 {
     //[SerializeField] private AudioSource audio;
     [SerializeField] private Slider musicSlider;
+    public static float volume;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
