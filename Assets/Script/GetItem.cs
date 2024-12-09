@@ -13,6 +13,8 @@ public class GetItem : MonoBehaviour
     public AudioClip brain;
     public AudioClip flashlight;
     public AudioSource AudioSource;
+    public int mocua = 1;
+    MainDoor mocuatudong;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class GetItem : MonoBehaviour
     void Update()
     {
         Get();
+        nhiemvudemocua();
     }
 
     public void OnTriggerStay(Collider other)
@@ -72,6 +75,14 @@ public class GetItem : MonoBehaviour
             intText.SetActive(false);
             flash = null;
             gameObject.GetComponent<Core>().coree();
+        }
+    }
+    private void nhiemvudemocua()
+    {
+        if (_itemCount == mocua)
+        {
+            mocuatudong.AutoOpenDoor();
+            Debug.Log("mmmmmmm");
         }
     }
 }

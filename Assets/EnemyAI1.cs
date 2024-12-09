@@ -125,7 +125,7 @@ using UnityEngine.AI;
 public class EnemyAI1 : MonoBehaviour
 {
     [SerializeField]
-    private NavMeshAgent navMeshAgent;
+    public NavMeshAgent navMeshAgent;
 
     [SerializeField]
     private float radius = 10f; // Bán kính phát hiện player
